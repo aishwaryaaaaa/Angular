@@ -1,0 +1,20 @@
+table{
+  border-collapse:collapse;
+  width:30%;
+  border:1px solid black;
+
+}
+th,td{
+  border:1px solid black;
+  text-align:left;
+  padding:8px;
+}
+tr:nth-child(odd){
+  background-color: aquamarine;
+}
+tr:nth-child(even){
+  background-color: rgb(159, 255, 14);
+}
+tr,td:hover{
+  background-color: rgb(80, 212, 233);
+}
