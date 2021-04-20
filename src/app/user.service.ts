@@ -17,4 +17,7 @@ export class UserService {
   getAllUsers(){
     return this.http.get(URL);
   }
+  delete(userid:number){
+    return this.http.delete(URL+'/'+userid);
+  }
 }

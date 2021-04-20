@@ -1,6 +1,8 @@
 export
  class User{
-   name:string="Ram";
-   age:number=0;
+   name1:string="";
+   id:any=-1;
+  name:string='Ram';
+  age:number=0;
    dob:Date=new Date();
    }

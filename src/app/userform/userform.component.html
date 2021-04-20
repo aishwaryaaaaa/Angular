@@ -6,12 +6,18 @@
 
   Save
 </button>
+<!-- <input [(ngModel)] = 'user.name1'>
+<button (click)='getUserByName(user.name1)'>
+Get User
+</button> -->
 <table>
   <thead><td>First Name</td><td>Age</td><td>DOB</td></thead>
   <tbody>
-   <tr  *ngFor="let user1 of userArray">
+    <tr *ngFor='let user1 of userArray; index as i'>
      <td>{{user1.name}}</td>
      <td>{{user1.age}}</td>
+     <td>{{user1.dob}}</td>
+     <td><button (click)='this.deleteUser(user1.id,i)'>x</button></td>
    </tr>
   </tbody>
 </table>
